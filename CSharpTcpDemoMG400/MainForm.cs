@@ -34,6 +34,8 @@ namespace CSharpTcpDemo
             this.textBoxZInput.Text = "10.0";
             this.textBoxRInput.Text = "0.0";
 
+            labelNowSpeedFactor.Hide();
+
             //启动定时器
             mTimerReader.Elapsed += new System.Timers.ElapsedEventHandler(TimeoutEvent);
             mTimerReader.AutoReset = true;
